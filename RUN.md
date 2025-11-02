@@ -43,20 +43,20 @@ You can create your own test inputs using the generator scripts:
 
 ### Factory generator
 ```bash
-python factory/gen_factory.py > sample_factory.json
+python gen_factory.py > sample_factory.json
 python factory/main.py < sample_factory.json
 ```
 
 ### Belts generator
 ```bash
-python belts/gen_belts.py > sample_belts.json
+python gen_belts.py > sample_belts.json
 python belts/main.py < sample_belts.json
 ```
 
 Each generator can produce multiple or seeded random cases, for example:
 ```bash
-python factory/gen_factory.py 5 > factories.json
-python belts/gen_belts.py 3 42 > belts.json
+python gen_factory.py 5 > factories.json
+python gen_belts.py 3 42 > belts.json
 ```
 
 ---
